@@ -1,0 +1,186 @@
+/*全局样式*/
+*{
+	margin:0px;
+	padding:0px;
+}
+/*article样式*/
+article{
+	width: 600px;
+	height: 500px;
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*炮弹样式*/
+.shell{
+	width:20px;
+	height:20px;
+	background-color: black;
+	float: left;
+	margin-top: 30px;
+	border-radius: 50%;
+	-webkit-animation:shell_animations 0.5s ease-out infinite forwards;
+	-moz-animation:shell_animations 0.5s ease-out infinite forwards;
+	animation:shell_animations 0.5s ease-out infinite forwards;
+}
+/*炮弹动画*/
+@-webkit-keyframes shell_animations{
+    0%{transform:translate(0px,0px);}
+    100%{transform:translate(-500px,0px);}
+}
+@keyframes shell_animations{
+    0%{transform:translate(0px,0px);}
+    100%{transform:translate(-500px,0px);}
+}
+@-moz-keyframes shell_animations{
+    0%{transform:translate(0px,0px);}
+    100%{transform:translate(-500px,0px);}
+}
+/*
+.barrel:hover{
+	width:250px;
+	background-color: red;
+}*/
+/*炮管样式*/
+.barrel{
+	width: 200px;
+	height: 20px;
+	background-color: #999;
+	margin-right: -40px;
+	margin-top: 30px;
+	margin-left: 75px;
+	float: left;
+	-webkit-animation:animations 0.5s ease-out infinite forwards;
+	-moz-animation:animations 0.5s ease-out infinite forwards;
+	animation:animations 0.5s ease-out infinite forwards;
+}
+/*炮管动画*/
+@-webkit-keyframes animations{
+    0%{width:200px;}
+    100%{width:250px;background-color: red}
+}
+@-moz-keyframes animations{
+    0%{width:200px;}
+    100%{width:250px;background-color: red}
+}
+@keyframes animations{
+    0%{width:200px;}
+    100%{width:250px;background-color: red}
+}
+
+.turret:hover{
+	background-color: #999;
+}
+/*炮塔样式*/
+.turret{
+	width:200px;
+	height: 100px;
+	background-color: #999;
+	float: left;
+	border-top-left-radius: 120px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	-webkit-transition:background-color .5s ease-in;
+}
+/*旗杆样式*/
+.flagpole{
+	width:10px;
+	height: 100px;
+	background-color: black;
+	float: left;
+	margin-left: 30px;
+}
+/*旗子样式*/
+.flag{
+	width:0px;
+	height:0px;
+	float:left;
+	background-color: blue;
+	border-style: solid;
+	border-left-width:50px;
+	border-right-width: 0px;
+	border-bottom-width: 20px;
+	border-top-width: 20px;
+	border-left-color: red;
+	border-right-color:#fff;
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+}
+/*车身样式*/
+.carBody{
+	width:500px;
+	height: 0px;
+	background-color: #9f9;
+	/*margin-top: 200px;*/
+	border-style: solid;
+	border-left-width:50px;
+	border-right-width: 50px;
+	border-bottom-width: 100px;
+	border-top-width: 0px;
+	border-left-color: #fff;
+	border-right-color:#fff;
+	border-top-color: red;
+	border-bottom-color: black;
+	float: left;
+}
+/*第一个轮子样式*/
+.wheel_1{
+	width: 82px;
+	height: 82px;
+	border-radius: 50%;
+	background-color: red;
+	float: left;
+	margin-left: 70px;
+	margin-top:-20px;
+	-webkit-animation:wheel_animations 0.5s ease-out infinite forwards;
+	-moz-animation:wheel_animations 0.5s ease-out infinite forwards;
+	animation:wheel_animations 0.5s ease-out infinite forwards;
+}
+@-webkit-keyframes wheel_animations{
+    0%{transform:rotate(0deg)}
+    25%{transform:rotate(-90deg)}
+    50%{transform:rotate(-180deg)}
+    75%{transform:rotate(-270deg)}
+    100%{transform:rotate(-360deg)}
+}
+@-moz-keyframes wheel_animations{
+    0%{transform:rotate(0deg)}
+    25%{transform:rotate(-90deg)}
+    50%{transform:rotate(-180deg)}
+    75%{transform:rotate(-270deg)}
+    100%{transform:rotate(-360deg)}
+}
+@keyframes wheel_animations{
+    0%{transform:rotate(0deg)}
+    25%{transform:rotate(-90deg)}
+    50%{transform:rotate(-180deg)}
+    75%{transform:rotate(-270deg)}
+    100%{transform:rotate(-360deg)}
+}
+/*第二个轮子样式*/
+.wheel_2{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: red;
+	float: left;
+	margin-left: 260px;
+	margin-top:-20px;
+	-webkit-animation:wheel_animations 0.5s ease-out infinite forwards;
+	-moz-animation:wheel_animations 0.5s ease-out infinite forwards;
+	animation:wheel_animations 0.5s ease-out infinite forwards;
+}
+.hub{
+	width:82px;
+	height:2px;
+	background-color: black;
+	margin-top: 40px;
+}
+.hub2{
+	width:2px;
+	height: 80px;
+	margin-left: 40px;
+	margin-top: -41px;
+	background-color: black;
+}

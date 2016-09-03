@@ -1,0 +1,127 @@
+/*初始化*/
+*{
+	margin:0;
+	padding: 0;
+}
+/*box样式*/
+#box{
+	 margin:100px;
+}
+/*view样式*/
+#view{height: 400px;width: 400px; margin:80px auto 0 auto}
+#view{
+	-webkit-transform-style:preserve-3d;
+	-webkit-perspective:20000px; 
+	-webkit-perspective-origin:50% 50%; 
+	-webkit-transform-origin:100px 100px 0; 
+	-webkit-animation:animation 6s ease-out infinite forwards;
+	animation:animation 6s ease-out infinite forwards;
+	-moz-animation:animation 6s ease-out infinite forwards;
+	animation:animation 6s ease-out infinite forwards;
+}
+/*动画效果*/
+@-webkit-keyframes animation{
+    0%,100%{-webkit-transform:rotateX(0deg) rotateY(0deg) rotateY(0deg)}
+    25%{-webkit-transform:rotateX(45deg)  rotateY(45deg)}
+    50%{-webkit-transform:rotateX(90deg) rotateZ(90deg)}
+    75%{-webkit-transform:rotateX(50deg) rotateY(50deg) rotateX(50deg)}
+}
+@-moz-keyframes animation{
+    0%,100%{-webkit-transform:rotateX(0deg) rotateY(0deg) rotateY(0deg)}
+    25%{-webkit-transform:rotateX(45deg)  rotateY(45deg)}
+    50%{-webkit-transform:rotateX(90deg) rotateZ(90deg)}
+    75%{-webkit-transform:rotateX(50deg) rotateY(50deg) rotateX(50deg)}
+}
+@keyframes animation{
+    0%,100%{-webkit-transform:rotateX(0deg) rotateY(0deg) rotateY(0deg)}
+    25%{-webkit-transform:rotateX(45deg)  rotateY(45deg)}
+    50%{-webkit-transform:rotateX(90deg) rotateZ(90deg)}
+    75%{-webkit-transform:rotateX(50deg) rotateY(50deg) rotateX(50deg)}
+}
+
+/*div样式*/
+#mydiv{
+	width: 180px;
+	height: 180px;
+	font-size: 80px;
+	text-align: center;
+	background-color:#ff0000;
+	position:absolute;
+}
+/*每一个面的样式*/
+.A{-webkit-transform:translateZ(90px);}	
+.B{-webkit-transform:rotateX(-90deg) translateZ(90px);}
+.C{-webkit-transform:rotateX(90deg) translateZ(90px);}
+.D{-webkit-transform:translateZ(-90px);}
+.E{-webkit-transform:rotateY(90deg) translateZ(90px);}
+.F{-webkit-transform:rotateY(-90deg) translateZ(90px);}
+/*每一面小小格子中样式*/
+.aa,.bb,.cc,.dd,.ee,.ff{
+	width: 58px;
+	height: 58px;
+	float: left;
+}
+.aa{
+	border:1px solid #fff;
+	background-color: blue;
+}
+.bb{
+	border:1px solid #fff;
+	background-color: green;
+}
+.cc{
+	border:1px solid #fff;
+	background-color: #999;
+}
+.dd{
+	border:1px solid #fff;
+	background-color: #11EEEE;
+}
+.ee{
+	border:1px solid #fff;
+	background-color: red;
+}
+.ff{
+	border:1px solid #fff;
+	background-color: #EE11C2;
+}
+
+/***************************************老师讲的*************************************************************/
+
+/*
+.A{-webkit-transform:translateZ(80px);}	
+.B{-webkit-transform:rotateX(-90deg) translateZ(80px);}
+.C{-webkit-transform:rotateY(90deg) rotateX(90deg) translateZ(80px);}
+.D{-webkit-transform:translateZ(-80px);}
+.E{-webkit-transform:rotateY(90deg) translateZ(80px);}
+.F{-webkit-transform:rotateY(-90deg) translateZ(80px);}*/
+
+
+
+/******************************************自己弄得*********************************************************/
+/*
+.A{-webkit-transform:translateZ(200px)}	
+.B{}
+.C{-webkit-transform:  rotateY(90deg) translateZ(200px) }
+.D{-webkit-transform: rotateY(270deg) translateZ(200px) }
+.E{-webkit-transform:  rotateX(270deg) translateZ(200px) translateY(500px) }
+.F{-webkit-transform:  rotateX(90deg) translateZ(200px)}
+*/
+
+/*********************************************查资料弄得 ******************************************************/
+/*
+.A{ -webkit-transform:rotateX(90deg)   translateZ(100px);}
+.B{ -webkit-transform:rotateX(270deg)  translateZ(100px);}
+.C{ -webkit-transform:rotateY(90deg) translateZ(100px);}
+.D{ -webkit-transform:rotateY(270deg) translateZ(100px);}
+.E{ -webkit-transform:translateZ(-100px);}
+.F{ -webkit-transform: translateZ(100px) ;}*/
+
+
+/*0%{-webkit-perspective-origin:90px 90px;}
+    10%{-webkit-perspective-origin:90px -1800px;}
+    20%{-webkit-perspective-origin:1800px 1000px;}
+    30%{-webkit-perspective-origin:-1800px -1000px;}
+    40%{-webkit-perspective-origin:90px 2000px;}*/
+    /*100%{-webkit-perspective-origin:-1000px  -1000px;}*/
+	/*0%{-webkit-transform:rotateX(90deg) }
