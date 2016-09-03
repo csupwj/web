@@ -1,0 +1,99 @@
+/*全局初始化*/
+*{
+	margin:0px;
+	border: 0px;
+}
+/*div初始化*/
+div{
+	width: 100px;
+	height: 100px;
+	
+}
+/*第一个容器属性*/
+.box{
+	width: auto;
+}
+.con{
+	width: 300px;
+	height:300px;
+	background-color: #9E9E9E;
+	float: left;
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
+
+}
+/*第二个容器*/
+.con2{
+	width: 300px;
+	height:300px;
+	background-color: #9E9E0E;
+	display: -webkit-flex;
+	/*float:left;*/
+/*第三个容器*/
+}
+.con3{
+	width: 300px;
+	height:300px;
+	background-color: #0E9E0E;
+	display: -webkit-box;
+	float:left;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+}
+/*第四个容器*/
+.con4{
+	width: 300px;
+	height:300px;
+	background-color: #999;
+	float:left;
+	/*display: -webkit-box;*/
+	-webkit-column-count:2;
+}
+/*第一个小盒子*/
+.frist{
+	background-color: red;
+	width: 300px;
+	-webkit-flex:1;
+
+}
+/*第二个小盒子*/
+.second{
+	background-color: blue;
+	-webkit-flex:2;
+	width: 300px;
+	-webkit-column-count:2;
+}
+}
+/*第三个小盒子*/
+.third{
+	background-color: green;
+	width: 300px;
+	-webkit-flex:1;
+}
+/*第四个小盒子*/
+.fourth{
+	display: -webkit-box;
+	background-color: #008866;
+	-webkit-flex:1;
+	order:3;  /*排序*/
+}
+/*第五个小盒子*/
+.fifth{
+	background-color: #098070;
+	-webkit-flex:2;
+	height:300px;
+	order:2;
+
+}
+/*第六个小盒子*/
+.sixth{
+	background-color: #907069;
+	-webkit-flex:1;
+	order:1;
+}
+.seventh{
+
+}
+.eightd{
+
+}

@@ -1,0 +1,44 @@
+/*table属性*/
+#con{
+	margin-left: auto;
+	margin-right: auto;
+	/*margin-top: 30px;*/
+	width:600px ;
+}
+/*表头说明文字属性*/
+.prompt_div{
+	line-height:24px;
+}
+.mytable{
+	border-collapse: collapse;
+}
+a{
+	text-decoration:none;
+	text-decoration:none ; color:white ;
+}
+/*外层div属性*/
+div{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 0px;
+	width:800px;
+	background: #eee url() no-repeat center top; 
+	border-radius: 24px;
+}
+}
+body { 
+padding: 0; 
+margin: 0; 
+/*background: #f8f7e5 url() no-repeat center top; */
+width: 100%; 
+display: table; 
+} 
+td{
+	font-size: 12px;
+}
+.table_title{
+	font-size: 24px;
+	background: #ff0000 url(../img/bg.jpg) no-repeat center top; 
+}

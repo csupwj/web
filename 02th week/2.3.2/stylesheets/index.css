@@ -1,0 +1,128 @@
+/*全局初始化*/
+*{   
+        margin:0px;
+}
+a{
+	color: black;
+}
+/*html属性设置*/
+html{
+	/*height: 100%;*/
+}
+/*body属性设置*/
+
+body{
+	position: relative;
+	/*height: 100%;*/
+	min-height: 600px;
+	min-width: 810px;
+}
+/*顶部div属性设置*/
+.top_div{
+	margin-top: 30px;
+	margin-right: 20px;
+	font-weight:bold;
+	word-spacing:10px;
+	font-size: 14px;
+	color: red;
+}
+/*搜索框效果设置*/
+input.input1:focus{
+	border-color:#38f;
+}
+/*搜索框效果设置*/
+input.intput1:hover{
+	border-color:#999;
+}
+/*搜索框属性设置*/
+.input1{
+	margin:0px;
+	width:520px;
+	height:32px;
+	vertical-align: middle;
+	padding-left:10px;
+	outline:0;
+	border: 1px solid #ccc;
+}
+input.input2:hover{
+	background-color: #2d78f4;
+}
+/*百度一下属性设置*/
+.input2{
+	height: 36px;
+	width: 80px;
+	vertical-align: middle; 
+	background: #38f;
+	border:none;
+	font-size:16px;
+	border: 1px solid #2d78f4;
+	cursor: pointer;
+}
+.input_div{
+	float: left;
+/*输入框容器属性*/
+}
+.input_con{
+	height: 36px;
+	width:620px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.img_div{
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+/*底部div属性设置*/
+.buttom_con{
+	width: 620px;
+	height: 80px;
+	position: absolute;
+	bottom: 50px;
+	left:50%;
+	margin-left: -310px;
+}
+.box1{
+	width: 60px;
+	height: 60px;
+	background-image:url(./img/3.png);
+	background-color:green;
+	float: left;
+}
+.box2{
+	width: 80px;
+	height: 60px;
+	font-size: 13px;
+	margin-left: 8px;
+	background-image:url(./img/3.png);
+	float: left;
+	padding-top: 6px;
+	color: #999;
+}
+.box3{
+	width: 60px;
+	height: 60px;
+	background-color:green;
+	float: left;
+
+}
+.box4{
+	width: 60px;
+	height: 60px;
+	font-size: 13px;
+	margin-left: 8px;
+	padding-top: 6px;
+	float: left;
+	color: #999;
+}
+.box5{
+	width: 320px;
+	height: 60px;
+	font-size: 12px;
+	margin-left: 20px;
+	line-height:18px;
+	float: left;
+	color: #999;
+}
+.a_color{
+	color: #999;
+}
